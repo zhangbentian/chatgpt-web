@@ -7,13 +7,13 @@ import { setupRouter } from './router'
 
 async function bootstrap() {
   const app = createApp(App)
-  setupAssets()
+  setupAssets() // 设置静态样式
 
-  setupScrollbarStyle()
+  setupScrollbarStyle() // 设置滚动条样式
 
   setupStore(app)
 
-  setupI18n(app)
+  setupI18n(app) // 设置语言选择
 
   await setupRouter(app)
 
